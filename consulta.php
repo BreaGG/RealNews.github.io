@@ -1,7 +1,7 @@
 <?php 
 
 
-$conex = mysqli_connect("164.90.231.254","root","","realnews"); 
+$conex = mysqli_connect("164.90.231.254","root","Brea2023$HackUpc","realnews"); 
 
 
 if ($conex) {
