@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RealNews - Registro</title>
+	<link rel="icon" type="image/x-icon" href="img/logo.png">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="imagenTexto">
+            <img src="img/logo.png" alt="" width="100px">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.php">Inicio</a></li>
+                <li><a href="registro.html">Registrate</a></li>
+                <li><a href="form_noticia.html">Escribe tu noticia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+    <form method="post" action="form_noticia.php">
+        <h1>Redacta tu noticia!</h1>
+        <label for="titular">TITULAR</label>
+        <br>
+        <input type="text" id="titular" name="titular" minlength="6" maxlength="255" placeholder="Titula tu noticia en 255 caracteres máximo." required>
+        <br>
+        <br>
+        <label for="entradilla">ENTRADILLA</label>
+        <br>
+        <textarea type="text" id="mensaje" name="entradilla" minlength="6" maxlength="600" placeholder="Resume tu noticia en 600 caracteres máximo." required></textarea>
+        <br>
+        <br>
+        <label for="genero">GENERO DE TU NOTICIA</label>
+        <br>
+        <select id="genero" name="genero">
+            <option value="Deportes">Deportes</option>
+            <option value="Actualidad">Actualidad</option>
+            <option value="Cultura">Cultura</option>
+            <option value="Trafico">Trafico</option>
+            <option value="Tiempo">Tiempo</option>
+          </select>
+        <br>  
+        <br> 
+        <label for="noticia">NOTICIA</label>
+        <br>
+        <textarea id="mensaje" type="text" name="noticia"  maxlength="65000" placeholder="Escribe tu noticia en 65000 caracteres máximo." required></textarea>
+        <br>
+        <br>
+        <label for="autor">AUTOR</label>
+        <br>
+        <input type="text" id="titular" name="autor" minlength="3" maxlength="25" placeholder="Quien redacta la noticia." required>
+        <br>
+        <br>
+        <input type="submit" name="submit" value="ENVIAR NOTICIA">
+     </form>
+     
+    </section>
+</body>
+</html>
