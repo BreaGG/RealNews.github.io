@@ -1,6 +1,6 @@
 <?php 
 
-$conex = mysqli_connect("164.90.231.254","root","Brea2023$HackUpc","realnews"); 
+$conex = mysqli_connect(""); 
 
 if (isset($_POST['register'])) {
     if (strlen($_POST['user']) >= 3 && strlen($_POST['pass']) >= 6) {
