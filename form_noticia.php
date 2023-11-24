@@ -1,6 +1,6 @@
 <?php 
 
-$conex = mysqli_connect("164.90.231.254","root","Brea2023$HackUpc","realnews"); 
+$conex = mysqli_connect(""); 
 
 if (isset($_POST['submit'])) {
     if (strlen($_POST['titular']) >= 1 && strlen($_POST['noticia']) >= 1) {
