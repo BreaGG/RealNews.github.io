@@ -43,7 +43,7 @@
     <?php 
 
 
-    $conex = mysqli_connect("164.90.231.254","root","Brea2023$HackUpc","realnews"); 
+    $conex = mysqli_connect(""); 
 
     if ($conex) {
         $consulta = "SELECT nID, cTitular, cEntradilla, cAutor FROM tnoticia WHERE cGenero = 'Deportes' ORDER BY nID DESC;";
